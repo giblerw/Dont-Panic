@@ -31,7 +31,14 @@
                             <outlet property="delegate" destination="qPq-49-ktL" id="vnw-OH-e7c"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Don't Panic." id="P7Z-gU-69y"/>
+                    <navigationItem key="navigationItem" title="Don't Panic." id="P7Z-gU-69y">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="KNM-3j-rlK">
+                            <color key="tintColor" red="0.87085580579999999" green="0.87085580579999999" blue="0.87085580579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addBtnPressed:" destination="qPq-49-ktL" id="C9Q-ep-jhM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bm8-7Z-23x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
