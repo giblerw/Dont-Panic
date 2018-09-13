@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		58E52ABC214A94AF0040E394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E52ABB214A94AF0040E394 /* AppDelegate.swift */; };
-		58E52ABE214A94AF0040E394 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E52ABD214A94AF0040E394 /* ViewController.swift */; };
+		58E52ABE214A94AF0040E394 /* TodoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E52ABD214A94AF0040E394 /* TodoListVC.swift */; };
 		58E52AC1214A94AF0040E394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E52ABF214A94AF0040E394 /* Main.storyboard */; };
 		58E52AC3214A94B10040E394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58E52AC2214A94B10040E394 /* Assets.xcassets */; };
 		58E52AC6214A94B10040E394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E52AC4214A94B10040E394 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		58E52AB8214A94AF0040E394 /* Palm Pilot 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Palm Pilot 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E52ABB214A94AF0040E394 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58E52ABD214A94AF0040E394 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58E52ABD214A94AF0040E394 /* TodoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListVC.swift; sourceTree = "<group>"; };
 		58E52AC0214A94AF0040E394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58E52AC2214A94B10040E394 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58E52AC5214A94B10040E394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,38 @@
 		58E52ABA214A94AF0040E394 /* Palm Pilot 2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				58E52ACF214A94DF0040E394 /* Controller */,
+				58E52ACE214A94D70040E394 /* Views */,
+				58E52ACD214A94CE0040E394 /* Model */,
 				58E52ABB214A94AF0040E394 /* AppDelegate.swift */,
-				58E52ABD214A94AF0040E394 /* ViewController.swift */,
 				58E52ABF214A94AF0040E394 /* Main.storyboard */,
 				58E52AC2214A94B10040E394 /* Assets.xcassets */,
 				58E52AC4214A94B10040E394 /* LaunchScreen.storyboard */,
 				58E52AC7214A94B10040E394 /* Info.plist */,
 			);
 			path = "Palm Pilot 2.0";
+			sourceTree = "<group>";
+		};
+		58E52ACD214A94CE0040E394 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58E52ACE214A94D70040E394 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		58E52ACF214A94DF0040E394 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				58E52ABD214A94AF0040E394 /* TodoListVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58E52ABE214A94AF0040E394 /* ViewController.swift in Sources */,
+				58E52ABE214A94AF0040E394 /* TodoListVC.swift in Sources */,
 				58E52ABC214A94AF0040E394 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RP6FSYN5B5;
 				INFOPLIST_FILE = "Palm Pilot 2.0/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.westongibler.Palm-Pilot-2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RP6FSYN5B5;
 				INFOPLIST_FILE = "Palm Pilot 2.0/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.westongibler.Palm-Pilot-2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
